@@ -279,10 +279,12 @@
                 <div class="row width-narrower content-block">
                     <div class="column xl-12">
 
-                        <form name="rform" id="rform" class="reservation-form" method="post"
-                            action="https://formspree.io/f/moqozaln" autocomplete="off">
+                        <form name="rform" id="rform" class="reservation-form" method="POST"
+                            action="https://formspree.io/f/mnjnkyby">
                             <fieldset class="row">
                                 <input type="hidden" name="subject" value="She Leads get involved mail" />
+                                <!-- Honeypot spam protection -->
+                                <input type="text" name="_gotcha" style="display:none">
                                 <div class="column xl-6 tab-12">
                                     <label for="rname">Name: </label>
                                     <input type="text" name="name" id="rname" class="u-fullwidth"
@@ -298,26 +300,27 @@
                                 <div class="column xl-6 tab-12">
                                     <label for="rphone">Contact Number: </label>
                                     <input type="tel" name="contactNo" id="rphone" class="u-fullwidth"
-                                        placeholder="Enter Your Contact No." value="">
+                                        placeholder="Enter Your Contact No." value="" >
                                 </div>
 
                                 <div class="column xl-6 tab-12">
                                     <label for="rdate">Email Address: </label>
-                                    <input type="text" name="email" id="rdate" class="u-fullwidth"
+                                    <input type="email" name="email" id="rdate" class="u-fullwidth"
                                         placeholder="Enter Your Email Address" value="">
                                 </div>
 
                                 <div class="column xl-12 message u-add-bottom">
                                     <label for="radd-info">How would you like to get involved? </label>
                                     <textarea name="message" id="radd-info" class="u-fullwidth"
-                                        placeholder="Let us know how you would like to get involved with She Leads, and we will contact you with the next steps"></textarea>
+                                        placeholder="Let us know how you would like to get involved with She Leads, and we will contact you with the next steps"
+                                        ></textarea>
                                 </div>
 
                                 <div class="rform__bottom column xl-12">
                                     <div class="row">
                                         <div class="column xl-6 tab-12">
                                             <label class="rcheckbox u-add-bottom">
-                                                <input type="checkbox">
+                                                <input type="checkbox" name="consent to contact" value="Yes">
                                                 <span class="label-text">Do you allow She Leads to use the
                                                     provided information to contact you?</span>
                                             </label>
@@ -336,7 +339,7 @@
                     </div>
                 </div> <!-- end content-block -->
 
-                <div class="row width-narrower row-x-center content-block content-block--grey cta-block">
+                <!-- <div class="row width-narrower row-x-center content-block content-block--grey cta-block">
                     <div class="column xl-10 mob-12">
                         <h3>She Leads Banking Details</h3>
                         <p class="attention-getter">
@@ -347,7 +350,7 @@
                             Reference: Contact Number / Email Address
                         </p>
                     </div>
-                </div> <!-- end content-block -->
+                </div> end content-block -->
 
             </section> <!-- pagecontent -->
 
