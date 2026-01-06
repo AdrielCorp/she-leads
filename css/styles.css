@@ -4059,6 +4059,19 @@ body.menu-is-open {
     vertical-align: bottom;
 }
 
+/* menublock involved */
+.menublock-item__thumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.menublock-item__thumbs img {
+    width: 50%;
+    height: auto;
+}
+
+
 .menublock-item__text {
     text-align : center;
     padding    : var(--vspace-1) var(--vspace-1_25) var(--vspace-0_5);
