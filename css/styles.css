@@ -4327,28 +4327,44 @@ body.menu-is-open {
 }
 
 /* ------------------------------------------------------------------- 
- * ## copyright
+ * ## copyright - REFINED & CENTERED
  * ------------------------------------------------------------------- */
 .ss-copyright {
-    margin     : 0 var(--vspace-2) 0 0;
-    line-height: var(--vspace-0_875);
+    display        : flex;
+    justify-content: center;   /* Centers the items horizontally */
+    flex-wrap      : wrap;     /* Allows wrapping on small mobile screens */
+    margin         : var(--vspace-1) 0; /* Removed the right margin */
+    line-height    : var(--vspace-1);
+    text-align     : center;
+    width          : 100%;
 }
 
 .ss-copyright span {
-    display: inline-block;
+    display    : inline-flex;
+    align-items: center;
 }
 
 .ss-copyright span::after {
     content: "|";
     display: inline-block;
-    padding: 0 0.8rem 0 1rem;
-    color  : rgba(255, 255, 255, 0.05);
+    padding: 0 1.2rem;         /* Balanced padding on both sides */
+    color  : rgba(255, 255, 255, 0.15); /* Slightly brighter for visibility */
 }
 
 .ss-copyright span:last-child::after {
     display: none;
 }
 
+/* Mobile: Stack them when space is tight */
+@media screen and (max-width: 600px) {
+    .ss-copyright {
+        flex-direction: column;
+        gap: var(--vspace-0_25);
+    }
+    .ss-copyright span::after {
+        display: none; /* Hide the bar when text is stacked */
+    }
+}
 /* ------------------------------------------------------------------- 
  * ## go top
  * ------------------------------------------------------------------- */
