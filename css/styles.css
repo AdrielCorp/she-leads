@@ -3561,6 +3561,18 @@ body.menu-is-open {
         width: 1.5em;
     }
 }
+.s-about__content-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.s-about__media-big {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 @media screen and (max-width: 800px) {
     .s-intro__scroll-down svg {
@@ -3628,6 +3640,7 @@ body.menu-is-open {
     bottom    : calc(var(--vspace-1_5) * -1);
     right     : -25%;
 }
+
 
 /* --------------------------------------------------------------------
  * ## about content main
@@ -3741,7 +3754,9 @@ body.menu-is-open {
     .s-about {
         padding-top: var(--vspace-3);
     }
+    
 }
+
 
 
 /* ===================================================================
