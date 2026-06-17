@@ -4652,11 +4652,10 @@ body.menu-is-open {
 
 .menu-block__cat-name {
     margin-top: 0;
+    text-align: center;
 }
 
 .menu-block__cat-name::before {
-    content: counter(ctr, decimal-leading-zero) ".";
-    counter-increment: ctr;
     font-weight: 500;
     font-size: 1.1em;
     line-height: 1;
