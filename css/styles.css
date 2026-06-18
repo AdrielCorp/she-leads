@@ -5101,11 +5101,9 @@ body.menu-is-open {
 }
 
 .s-gallery-healing-room {
-    /* background-color: var(--color-gray-19); */
     margin-top: auto;
     position: relative;
     padding-bottom: var(--vspace-3);
-    /* Added padding for better spacing */
 }
 
 .text-center-healing-room {
