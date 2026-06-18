@@ -4795,120 +4795,6 @@ body.menu-is-open {
     }
 }
 
-/*Events page styles
- */
- .events-calendar {
-    background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    margin-bottom: 50px;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
-}
-
-.calendar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.calendar-header button {
-    background: black;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.calendar {
-    width: 100%;
-}
-
-.calendar-days,
-.calendar-dates {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-}
-
-.calendar-days div {
-    text-align: center;
-    font-weight: bold;
-    padding: 10px;
-}
-
-.calendar-dates div {
-    text-align: center;
-    padding: 15px;
-    border: 1px solid #eee;
-    min-height: 60px;
-    position: relative;
-}
-
-.calendar-dates .event {
-    background: #f3e8ff;
-    font-weight: bold;
-    color: black;
-}
-
-.calendar-dates .event::after {
-    content: "";
-    width: 8px;
-    height: 8px;
-    background: black;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.calendar-legend {
-    margin-top: 15px;
-}
-
-.event-dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: black;
-    border-radius: 50%;
-    margin-right: 5px;
-}
-
-.event-modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,.6);
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.event-modal-content {
-    background: #fff;
-    width: 90%;
-    max-width: 500px;
-    padding: 30px;
-    border-radius: 10px;
-    position: relative;
-}
-
-#closeModal {
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-.calendar-dates .event:hover {
-    background: #7b2cbf;
-    color: white;
-    transition: .3s;
-}
-
 /*chamber*/
 .chamber-card {
     position: relative;
@@ -4966,9 +4852,7 @@ body.menu-is-open {
     line-height: 1;
 }
 
-/* =========================
-   Tablet Responsiveness
-========================= */
+/* Tablet Responsiveness */
 @media (max-width: 1024px) {
 
     .chamber-card {
@@ -4990,9 +4874,7 @@ body.menu-is-open {
 }
 
 
-/* =========================
-   Mobile Responsiveness
-========================= */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
 
     .chamber-card {
@@ -5026,9 +4908,7 @@ body.menu-is-open {
 }
 
 
-/* =========================
-   Small Mobile Devices
-========================= */
+/* Small Mobile Devices */
 @media (max-width: 480px) {
 
     .chamber-card {
