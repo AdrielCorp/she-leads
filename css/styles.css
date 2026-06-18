@@ -5110,3 +5110,20 @@ body.menu-is-open {
     text-align: center;
     margin-bottom: var(--vspace-1);
 }
+
+@media (max-width: 768px) {
+    .healing-room-btn {
+        font-size: 1.4rem;
+        padding: 1.2rem 1.8rem;
+        line-height: 1.4;
+        white-space: normal;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .healing-room-btn {
+        font-size: 1.2rem;
+        padding: 1rem 1.5rem;
+    }
+}
